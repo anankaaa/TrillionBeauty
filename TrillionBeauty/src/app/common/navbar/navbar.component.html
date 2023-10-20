@@ -11,7 +11,11 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand d-flex text-center" href="#">
+    <a
+      class="navbar-brand d-flex text-center"
+      [routerLinkActive]="['active']"
+      routerLink="/"
+    >
       <span class="logo-letter">t</span>
       <span class="logo-letter">r</span>
       <span class="logo-letter">i</span>
@@ -24,17 +28,14 @@
     </a>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="products">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink=""></a>
+        <li *ngFor="let item of menuItems" class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActive]="['active']"
+            [routerLink]="item.link"
+          >
+            {{ item.text }}</a
+          >
         </li>
       </ul>
       <form class="d-flex" role="search">
