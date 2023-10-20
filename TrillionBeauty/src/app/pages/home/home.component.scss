@@ -1,0 +1,84 @@
+.stories {
+  padding: 10rem 0;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  opacity: 0.4;
+  box-shadow: 0 0 3rem 0.2rem rgba(51, 51, 51, 0.6);
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stories-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.story-bg {
+  padding: 5rem;
+  width: 70%;
+}
+
+.story-text {
+  letter-spacing: 0.1rem;
+}
+
+.story-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.story-companyName {
+  color: lightblue;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #111;
+}
+
+.story-paragraph {
+  margin-top: 3rem;
+  text-align: justify;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.story-paragraph::first-letter {
+  margin-left: 1rem;
+}
+
+.button-group-shopping {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.button-shopping {
+  text-shadow: 0.1rem 0.1rem 0.2rem #777;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem;
+  box-shadow: 0 0 1rem 0.2rem rgba(51, 51, 51, 0.6);
+  color: #333;
+  background-color: #d4d4d4;
+}
+
+.button-shopping:hover {
+  background-color: #777;
+  color: #fff;
+  box-shadow: 0 0 3rem 0.2rem rgba(95, 94, 94, 0.6);
+  font-size: 1.6rem;
+}
