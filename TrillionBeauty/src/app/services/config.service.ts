@@ -5,6 +5,11 @@ export interface IMenuItem {
   link: string;
 }
 
+export interface ITableColumn {
+  title: string;
+  key: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })

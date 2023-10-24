@@ -9,6 +9,8 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ContactCardComponent } from './common/contact-card/contact-card.component';
 import { MapComponent } from './common/map/map.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductCardComponent } from './common/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,9 @@ import { MapComponent } from './common/map/map.component';
     ContactComponent,
     ContactCardComponent,
     MapComponent,
+    ProductCardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
