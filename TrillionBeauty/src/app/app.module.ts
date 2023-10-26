@@ -11,6 +11,8 @@ import { ContactCardComponent } from './common/contact-card/contact-card.compone
 import { MapComponent } from './common/map/map.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductCardComponent } from './common/product-card/product-card.component';
+import { FooterComponent } from './common/footer/footer.component';
+import { ProductByIdComponent } from './pages/product-by-id/product-by-id.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
     ContactCardComponent,
     MapComponent,
     ProductCardComponent,
+    FooterComponent,
+    ProductByIdComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

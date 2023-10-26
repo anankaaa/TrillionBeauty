@@ -1,6 +1,9 @@
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 mb-5">
+<div
+  class="wrapper row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 mt-5 mb-5"
+>
   <app-product-card
     *ngFor="let product of productList$ | async"
     [product]="product"
+    routerLink="/products/{{ product.id }}"
   ></app-product-card>
 </div>
